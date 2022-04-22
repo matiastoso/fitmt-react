@@ -1,4 +1,5 @@
-import NavBar from './components/NavBar.jsx'
+import NavBar from './components/NavBar.jsx';
+import ItemListContainer from './components/ItemListContainer.jsx';
 import './App.css';
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
+
+    <ItemListContainer />
     </div>
   );
 }
