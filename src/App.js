@@ -1,5 +1,5 @@
-import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <NavBar />
       </header>
 
-    <ItemListContainer />
+    <ItemListContainer nombre="Productos listados" />
     </div>
   );
 }

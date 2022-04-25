@@ -1,6 +1,13 @@
 import React from 'react';
-import CartWdidget from './CartWidget';
+import CartWdidget from '../CartWidget/CartWidget';
 import './NavBar.css';
+
+let contador = 0;
+function sumarContador() {
+    contador++;
+    console.log(contador)
+}
+
 
 function NavBar() {
     return (
@@ -15,7 +22,7 @@ function NavBar() {
                 <li><a href="#">Usuario</a></li>
             </ul>
 
-            <CartWdidget />
+            <CartWdidget funcionSumar={sumarContador} contador='3'/>
         </nav>
     )
 }

@@ -2,5 +2,6 @@
 .icono {
     color: white;
     font-size: 1.4rem;
+    user-select: none;
     cursor: pointer;
 }
