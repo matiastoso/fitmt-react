@@ -9,7 +9,7 @@ function App() {
         <NavBar />
       </header>
 
-    <ItemListContainer nombre="Productos listados" />
+    <ItemListContainer stock={5} initial={1} />
     </div>
   );
 }

@@ -1,15 +1,15 @@
-import React from 'react';
+// import React from 'react';
 import './CartWidget.css';
-let colorBlanco = {
-    color:'white'
-}
+import React, {component, useState} from 'react';
 
-const CartWdidget = ( {funcionSumar, contador} ) => {
+const CartWdidget = ( ) => {
+    const [count, setCount] = useState(0);
+
     return (
         <>
             <div>
-                <i onClick={funcionSumar} id="carritoBoton" className='icono fa-solid fa-cart-shopping' />
-                <span style={colorBlanco}> {contador} </span>
+                <i onClick={() => setCount(count + 1)} id="carritoBoton" className='icono fa-solid fa-cart-shopping' />
+                <span> {count} </span>
             </div>
         </>
     );
